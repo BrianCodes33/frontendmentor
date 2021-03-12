@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+:root {
+  --text-white: hsl(0, 0%, 100%);
+  --main-font: 'Ubuntu', sans-serif;
+  --secondary-font: 'Overpass', sans-serif;
+  --cta-text-color: hsl(356, 100%, 66%);
+  --dark-blue: hsl(237, 17%, 21%);
+  --body-copy-color: hsl(207, 13%, 34%);
+  --footer-background:  hsl(240, 10%, 16%);
+  --body-gradient: radial-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%))
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  // overflow-x: hidden;
+}
+
+header {
+  height: 77vh;
+  background: radial-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  border-bottom-left-radius: 10rem;
+  color: var(--text-white);
+}
+
+
+// Navigation
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 4rem 1rem;
+  .left-nav {
+    display: flex;
+  } ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    margin-left: 3rem;
+    margin-top: 0.6rem;
+    padding: 0;
+    li {
+      margin-left: 3.5rem;
+      position: relative;
+      &:after {
+        position: absolute;
+        content: '\005E';
+        transform: rotate(180deg);
+        color: #fff;
+        width: 50%;
+        right: -35px;
+        top: -3px;
+        font-weight: bold;
+        text-align: center;
+        height: 100%;
+        // background: #000;
+      }
+    }
+  } 
+}
+
+// Login && Signup Buttons
+.right-nav {
+  display: flex;
+}
+.login-btn > button {
+  background: transparent;
+  border: none;
+  margin-top: 1rem;
+  color: var(--text-white);
+  font-family: var(--main-font);
+  font-size: 1rem;
+}
+.sign-up-btn {
+  background: var(--main-font);
+  button {
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    position: relative;
+    left: 2rem;
+    border-radius: 2rem;
+    color: var(--cta-text-color);
+  }
+}
+
+// Headline & CTAs
+.header-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.hero-headline {
+  padding-top: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 400;
+  font-family: var(--secondary-font);
+}
+
+.sub-headline h3 {
+  position: relative;
+  left: -1rem;
+  margin-top: -1rem;
+  text-align: center;
+  font-weight: 100;
+  font-family: var(--secondary-font);
+}
+
+.ctas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+.learn-more {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.start-cta {
+  position: relative;
+  left: -40px;
+}
+.start-cta, .learn-more {
+    button {
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      position: relative;
+      left: 2rem;
+      border-radius: 2rem;
+      color: var(--cta-text-color);
+    }
+}
+
+// MAIN CONTENT 
+main {
+  overflow-x: hidden;
+  // margin: 1rem;
+  // padding: 4.5rem;
+}
+
+// DESIGN SECTION
+.design-section {
+  h1 {
+    text-align: center;
+    font-family: var(--secondary-font);
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--dark-blue);
+  }
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.desktop-copy {
+  grid-column: span 7;
+  font-weight: 400;
+  font-family: var(--secondary-font);
+  color: var(--dark-blue);
+  // padding: 0.5rem 1rem;
+  margin-right: 6rem;
+  margin-left: 5rem;
+  h2 {
+    padding-top: 3rem;
+    font-weight: 400;
+  }
+  p {
+    color: var(--body-copy-color);
+    font-weight: 300;
+  }
+}
+.desktop-illustration {
+  grid-column: span 5;
+  position: relative;
+  color: var(--dark-blue);
+  font-weight: 300;
+  font-family: var(--secondary-font);
+  img {
+    max-width: 750px;
+    position: absolute;
+    left: 50px;
+    top: -100px;
+  }
+}
+
+// Illustration Section
+.illustration-section {
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  background: var(--body-gradient);
+  color: #fff;
+  text-align: center;
+  margin-top: 12rem;
+  position: relative;
+  border-top-right-radius: 125px;
+  border-bottom-left-radius:125px;
+  h2 {
+    width: 100vw;
+    margin: 0;
+  }
+  .phones {
+    grid-column: 3/6;
+    img {
+      max-width: 400px;
+      position: relative;
+      top: -40px;
+    }
+  }
+  .state-of-art-text {
+    grid-column: 7/12;
+    align-self: center;
+  }
+}
