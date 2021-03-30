@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background: #fafafa;
+}
+
+header {
+  height: 60vh;
+  background: url("images/image-hero-desktop.jpg");
+  background-repeat: no-repeat;
+}
+
+nav {
+  margin: 0;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+nav ul li a {
+  margin-left: 3rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+nav .logo {
+  margin-left: 3rem;
+}
+
+main {
+  width: 55vw;
+  margin: 0 auto;
+  position: relative;
+  top: -15vh;
+}
+
+.container {
+  text-align: center;
+  font-weight: 300;
+  position: relative;
+}
+
+.box1 {
+  background: #fff;
+  border-radius: 20px;
+  padding: 1rem;
+  position: relative;
+  z-index: 1000;
+}
+
+.box1 h1 {
+  position: relative;
+  top: -30px;
+  margin: 0;
+}
+
+.box1 .logo img {
+  position: relative;
+  top: -7vh;
+}
+
+.box1 h2 {
+  position: relative;
+  top: -2.5vh;
+  color: #adadad;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.box1 .cta-container {
+  margin: 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.box1 .cta-container .cta-booking button {
+  background: #3cb4ac;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: 1rem 3rem;
+  border-radius: 1.5rem;
+}
+
+.box1 .cta-container .button-container {
+  background: #000;
+  width: 100%;
+  z-index: 100000000;
+  position: relative;
+}
+
+.box1 .cta-container .cta-bookmark button {
+  background: #ededed;
+  color: #505050;
+  font-weight: bold;
+  border: none;
+  padding: 1rem 3rem;
+  border-radius: 1.5rem;
+  position: relative;
+  margin-left: 1rem;
+}
+
+.box1 .cta-container .cta-bookmark button::before {
+  position: absolute;
+  width: 33%;
+  height: 100%;
+  background: #000;
+  left: 0;
+  top: 0;
+  border-radius: 1.5rem;
+  content: '';
+}
+/*# sourceMappingURL=style.css.map */

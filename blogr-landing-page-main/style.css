@@ -95,7 +95,7 @@ nav ul li:after {
 }
 
 .sign-up-btn button {
-  border: none;
+  border: 1px solid #fff;
   padding: 1rem 2rem;
   font-size: 1rem;
   position: relative;
@@ -150,6 +150,12 @@ nav ul li:after {
 .learn-more {
   margin-left: 2rem;
   margin-right: 2rem;
+  color: #fff;
+}
+
+.learn-more button {
+  background: none;
+  color: var(--main-font);
 }
 
 .start-cta {
@@ -157,14 +163,17 @@ nav ul li:after {
   left: -40px;
 }
 
+.start-cta button {
+  color: var(--cta-text-color);
+}
+
 .start-cta button, .learn-more button {
-  border: none;
+  border: 1px solid #fff;
   padding: 1rem 2rem;
   font-size: 1rem;
   position: relative;
   left: 2rem;
   border-radius: 2rem;
-  color: var(--cta-text-color);
 }
 
 main {
