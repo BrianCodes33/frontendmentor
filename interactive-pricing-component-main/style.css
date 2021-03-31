@@ -10,7 +10,7 @@ body {
 
 header {
   height: 50vh;
-  background: #fafbff;
+  background: #f5f7ff;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -119,8 +119,9 @@ main .header-pricing p:nth-child(2) span {
 }
 
 main .toggler {
+  margin-top: -1rem;
   height: 10px;
-  background: lightgray;
+  background: #10d5c2;
   width: 70%;
 }
 
@@ -128,19 +129,44 @@ main .billing {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 2rem;
+  color: #adadad;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.03rem;
+}
+
+main .billing .yearly-billing {
+  margin-left: 1rem;
+}
+
+main .billing .yearly-billing span {
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+  background: #feece7;
+  color: #ff8c66;
+  padding: 0.3rem;
 }
 
 main .cta {
   border-top: 1px solid lightgray;
-  padding: 1rem;
-  width: calc(100% - 30px);
+  padding: 3rem;
+  width: 504px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main .cta .callouts {
@@ -151,5 +177,25 @@ main .cta .callouts {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+main .cta .callouts span {
+  color: #adadad;
+}
+
+main .cta .callouts .fas {
+  color: #10d5c2;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+}
+
+main .cta button {
+  background: #293356;
+  padding: 1rem 2.5rem;
+  outline: none;
+  border: none;
+  color: #fff;
+  border-radius: 25px;
+  font-size: 0.9rem;
 }
 /*# sourceMappingURL=style.css.map */
