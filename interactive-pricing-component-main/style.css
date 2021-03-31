@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Manrope', sans-serif;
+}
+
+header {
+  height: 50vh;
+  background: #fafbff;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  color: #293356;
+  z-index: 10;
+  border-bottom-left-radius: 100px;
+}
+
+header:after {
+  width: 100%;
+  height: 100%;
+  content: '';
+  background: url("images/pattern-circles.svg");
+  background-repeat: no-repeat;
+  background-size: 150px;
+  -webkit-transform: translate(45%, 25%);
+          transform: translate(45%, 25%);
+  position: absolute;
+  z-index: -1;
+}
+
+header h1 {
+  font-weight: 800;
+}
+
+header h3 {
+  font-weight: 600;
+  color: #858fad;
+}
+
+main {
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  max-width: 600px;
+  position: relative;
+  top: -70px;
+  z-index: 1000;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 3px 3px 33px 13px lightgray;
+          box-shadow: 3px 3px 33px 13px lightgray;
+}
+
+main .header-pricing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  margin: 1rem;
+}
+
+main .header-pricing p:first-child {
+  margin-left: 2rem;
+  color: #adadad;
+  font-size: 1rem;
+  letter-spacing: 0.09rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+main .header-pricing p:nth-child(2) {
+  margin-right: 2rem;
+  font-size: 2rem;
+  position: relative;
+  top: -2rem;
+}
+
+main .header-pricing p:nth-child(2) span {
+  font-size: 1rem;
+  line-height: 0.5rem;
+  color: #adadad;
+  margin-left: 0.3rem;
+}
+
+main .toggler {
+  height: 10px;
+  background: lightgray;
+  width: 70%;
+}
+
+main .billing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem;
+}
+
+main .cta {
+  border-top: 1px solid lightgray;
+  padding: 1rem;
+  width: calc(100% - 30px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .cta .callouts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+/*# sourceMappingURL=style.css.map */
