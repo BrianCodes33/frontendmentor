@@ -138,6 +138,7 @@ main {
   position: relative;
   z-index: 1000;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin-top: 3rem;
   justify-content: space-between;
@@ -183,6 +184,7 @@ main {
     .product-header, .product-footer {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
     }
     .product-footer {
       margin-top: 1rem;
