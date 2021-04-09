@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background: linear-gradient(#af67e9, #6565e7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.container {
+  width: 75vw;
+  height: 75vh;
+  background: #fff;
+  border-radius: 0.8%;
+  -webkit-box-shadow: 1px 2px 33px 1px #777;
+          box-shadow: 1px 2px 33px 1px #777;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.illustration {
+  width: 50%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  left: -15%;
+}
+
+.faq {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.faq h1 {
+  font-size: 3rem;
+  margin-top: 7rem;
+}
+
+.faq p {
+  border-bottom: 1px solid #000;
+  padding-bottom: 1rem;
+  margin-left: 0;
+  width: 75%;
+  position: relative;
+}
+
+.faq p::after {
+  position: absolute;
+  width: 10%;
+  height: 10%;
+  right: 0;
+  font-size: 1.5rem;
+  content: '\2193';
+}
+/*# sourceMappingURL=style.css.map */
