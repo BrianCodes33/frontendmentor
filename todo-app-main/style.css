@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: #161722;
+  font-family: 'Josefin Sans', sans-serif;
+  overflow: hidden;
+}
+
+header {
+  height: 300px;
+  width: 100vw;
+  background: url("images/bg-desktop-dark.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 4rem;
+  letter-spacing: 0.7rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+header .icon {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+header > * {
+  margin-top: 5rem;
+}
+
+.todo-container {
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  top: -14vh;
+}
+
+.todo-container #add-todo {
+  padding: 1rem;
+  background: none;
+  border: none;
+  outline: 0;
+  color: #cacde8;
+  font-size: 1.2rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.todo-container .create-todo {
+  background: #25273c;
+}
+
+.todo-container .todo-list {
+  background: #25273c;
+  margin-top: 2rem;
+}
+
+.todo-container .todo-list > div {
+  padding: 1rem;
+  border-bottom: 1px solid #cacde8;
+  color: #cacde8;
+  cursor: pointer;
+}
+
+.todo-container .todo-list > div:hover {
+  color: #e4e5f1;
+}
+
+.todo-footer {
+  display: -ms-grid;
+  display: grid;
+  color: #cacde8;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  cursor: pointer;
+}
+
+.todo-footer .show-completed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.todo-footer .show-completed > * {
+  margin-left: 1rem;
+}
+
+.todo-footer .show-completed > :nth-child(1) {
+  color: #42a2ff;
+}
+
+.todo-footer .clear {
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.todo-footer:hover {
+  color: #e4e5f1;
+}
+/*# sourceMappingURL=style.css.map */

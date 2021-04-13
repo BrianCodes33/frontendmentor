@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: hsl(235, 21%, 11%);
+  font-family: 'Josefin Sans', sans-serif;
+  overflow: hidden;
+}
+
+header {
+  height: 300px;
+  width: 100vw;
+  background: url('images/bg-desktop-dark.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-evenly;
+  h1 {
+    color: #fff;
+    font-size: 4rem;
+    letter-spacing: 0.7rem;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  .icon {
+    color: #fff;
+    font-size: 2.5rem;
+  }
+  > * {
+    margin-top: 5rem;
+  }
+}
+
+.todo-container {
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  top: -14vh;
+  #add-todo {
+    padding: 1rem;
+    background: none;
+    border: none;
+    outline: 0;
+    color: hsl(234, 39%, 85%);
+    font-size: 1.2rem;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  .create-todo {
+    background: hsl(235, 24%, 19%)
+  }
+  .todo-list {
+    background: hsl(235, 24%, 19%);
+    margin-top: 2rem;
+    > div {
+      padding: 1rem;
+      border-bottom: 1px solid hsl(234, 39%, 85%);
+      color: hsl(234, 39%, 85%);
+      cursor: pointer;
+      &:hover {
+        color: hsl(236, 33%, 92%)
+      }
+    }
+  }
+}
+
+.todo-footer {
+  display: grid;
+  color: hsl(234, 39%, 85%);
+  flex-direction: row;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  cursor: pointer;
+  .show-completed {
+    display: flex;
+    > * {
+      margin-left: 1rem;
+    }
+    > :nth-child(1) {
+      color: lighten(dodgerblue, 7%);
+    }
+  }
+  .clear {
+    justify-self: end;
+  }
+  &:hover {
+    color: hsl(236, 33%, 92%);
+  }
+}
