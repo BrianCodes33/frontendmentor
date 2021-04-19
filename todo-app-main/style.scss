@@ -62,12 +62,18 @@ header {
   }
   .todo-list {
     background: hsl(235, 24%, 19%);
-    margin-top: 2rem;
-    > div {
+    margin-top: 2rem; 
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+    > li {
       padding: 1rem;
       border-bottom: 1px solid hsl(234, 39%, 85%);
       color: hsl(234, 39%, 85%);
       cursor: pointer;
+      margin: 0;
+      list-style: none;
       &:hover {
         color: hsl(236, 33%, 92%)
       }

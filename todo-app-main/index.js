@@ -1,16 +1,31 @@
-const addToDoElement = document.getElementById('add-todo')
-const form  = document.getElementById('form')
-const submitBtn = document.getElementById('submit-btn')
+const input = document.querySelector('#add-todo')
+const form = document.querySelector('#form')
+const toDoList = document.querySelector('.todo-list')
+const itemsLeftElement = document.querySelector('.items-left')
 
-function handleChange(e) {
+let inputValue = ''
+let itemsLeft = 0
+
+input.addEventListener('keyup', (e) => {
+  inputValue = e.target.value
+  // console.log(inputValue);
+})
+
+form.addEventListener('submit', (e) => {
   e.preventDefault()
-  console.log(e.target.value)
-}
+  if (inputValue === '') {
+    return null
+  } else {
+    const li = document.createElement('li')
+    li.innerHTML = inputValue
+    toDoList.appendChild(li)
+    
+  }
+})
 
-function handleSubmit(e) {
-  console.log(e.target.value)
-  e.preventDefault()
-}
-
-form.addEventListener('change', handleChange)
-form.addEventListener('submit', handleSubmit)
+form.addEventListener('submit', (e) => {
+  const p = document.createElement('p')
+  itemsLeft++
+  p.innerHTML = itemsLeft
+  itemsLeftElement.appendChild(p)
+})  
