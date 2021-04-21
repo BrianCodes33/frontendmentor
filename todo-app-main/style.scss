@@ -66,6 +66,8 @@ header {
     ul {
       margin: 0;
       padding: 0;
+            list-style: decimal; //list-style is set to decimal instead of none
+
     }
     > li {
       padding: 1rem;
@@ -73,7 +75,6 @@ header {
       color: hsl(234, 39%, 85%);
       cursor: pointer;
       margin: 0;
-      list-style: none;
       &:hover {
         color: hsl(236, 33%, 92%)
       }
