@@ -23,9 +23,12 @@ form.addEventListener('submit', (e) => {
   }
 })
 
-form.addEventListener('submit', (e) => {
-  const p = document.createElement('p')
-  itemsLeft++
-  p.innerHTML = itemsLeft
-  itemsLeftElement.appendChild(p)
-})  
+
+//this does not need I used css instead
+
+// form.addEventListener('submit', (e) => {
+//   const p = document.createElement('p')
+//   itemsLeft++
+//   p.innerHTML = itemsLeft
+//   itemsLeftElement.appendChild(p)
+// })  
